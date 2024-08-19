@@ -1,0 +1,39 @@
+2024-08-06T15:07:10.887+09:00  WARN 1880 --- [voiceApp] [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/HKIT/.gradle/caches/modules-2/files-2.1/org.json/json/20240303/ebb88e8fb5122b7506d5cf1d69f1ccdb790d22a/json-20240303.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/HKIT/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-08-06T15:07:10.907+09:00  INFO 1880 --- [voiceApp] [Test worker] com.voice.app.NyTest                     : Starting NyTest using Java 17.0.11 with PID 1880 (started by HKIT in C:\Users\HKIT\Desktop\SH\voice-fishing\voiceApp)
+2024-08-06T15:07:10.908+09:00  INFO 1880 --- [voiceApp] [Test worker] com.voice.app.NyTest                     : No active profile set, falling back to 1 default profile: "default"
+2024-08-06T15:07:11.276+09:00 DEBUG 1880 --- [voiceApp] [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@511505e7
+2024-08-06T15:07:12.217+09:00  INFO 1880 --- [voiceApp] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-06T15:07:12.443+09:00  INFO 1880 --- [voiceApp] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 212 ms. Found 3 JPA repository interfaces.
+2024-08-06T15:07:13.236+09:00  INFO 1880 --- [voiceApp] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-06T15:07:13.331+09:00  INFO 1880 --- [voiceApp] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-06T15:07:13.382+09:00  INFO 1880 --- [voiceApp] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-06T15:07:13.802+09:00  INFO 1880 --- [voiceApp] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-06T15:07:13.836+09:00  INFO 1880 --- [voiceApp] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-06T15:07:14.053+09:00  INFO 1880 --- [voiceApp] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6bd2f039
+2024-08-06T15:07:14.055+09:00  INFO 1880 --- [voiceApp] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-06T15:07:14.164+09:00  WARN 1880 --- [voiceApp] [Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2024-08-06T15:07:15.253+09:00  INFO 1880 --- [voiceApp] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-06T15:07:15.367+09:00  INFO 1880 --- [voiceApp] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-06T15:07:15.748+09:00  INFO 1880 --- [voiceApp] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-06T15:07:16.620+09:00  INFO 1880 --- [voiceApp] [Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name memberDetailsService
+2024-08-06T15:07:16.773+09:00  WARN 1880 --- [voiceApp] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-06T15:07:16.999+09:00 DEBUG 1880 --- [voiceApp] [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 29 mappings in 'requestMappingHandlerMapping'
+2024-08-06T15:07:17.183+09:00 DEBUG 1880 --- [voiceApp] [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-08-06T15:07:17.431+09:00 DEBUG 1880 --- [voiceApp] [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-06T15:07:17.473+09:00 DEBUG 1880 --- [voiceApp] [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-06T15:07:17.772+09:00  WARN 1880 --- [voiceApp] [Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/css/**'], Ant [pattern='/css/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-08-06T15:07:17.773+09:00  WARN 1880 --- [voiceApp] [Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/js/**'], Ant [pattern='/js/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-08-06T15:07:17.773+09:00  WARN 1880 --- [voiceApp] [Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/images/**'], Ant [pattern='/images/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-08-06T15:07:17.905+09:00  INFO 1880 --- [voiceApp] [Test worker] com.voice.app.NyTest                     : Started NyTest in 7.343 seconds (process running for 8.957)
+2024-08-06T15:07:18.905+09:00 DEBUG 1880 --- [voiceApp] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@511505e7, started on Tue Aug 06 15:07:11 KST 2024
+2024-08-06T15:07:18.932+09:00  INFO 1880 --- [voiceApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-06T15:07:18.934+09:00  INFO 1880 --- [voiceApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-06T15:07:18.943+09:00  INFO 1880 --- [voiceApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
